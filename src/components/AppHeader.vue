@@ -2,6 +2,16 @@
 
     export default{
         name:"AppHeader",
+        data(){
+         return{
+          imageName:"dc-logo.png",
+         }
+        },
+        methods:{
+          getImage:function(imgPath){
+            return new URL(imgPath, import.meta.url).href
+          }
+        }
     }
 
 
@@ -10,7 +20,7 @@
 
 <template>
   <header>
-    <img src="..src/assets/img/" alt="logo">
+    <img :src=" getImage(`../assets/img/${imageName}`)" alt="logo">
   </header>
 </template>
 
