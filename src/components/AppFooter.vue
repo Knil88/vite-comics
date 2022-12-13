@@ -301,7 +301,7 @@
             img{
               position: absolute;
               right: 10%;
-              top: 32%;
+              top: 176%;
             }
           }
 

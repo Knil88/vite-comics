@@ -9,52 +9,52 @@
             {
               "text": " CHARACTERS",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "COMICS",
               "url":"#",
-              "current" :" true"
+              "Current" :" true"
             },
             {
               "text": "MOVIES",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "TV",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "GAMES",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "COLLECTIBLES",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "VIDEOS",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "FANS",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "NEWS",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             {
               "text": "SHOP",
               "url":"#",
-              "current" :" false"
+              "Current" :" false"
             },
             
           ]
@@ -81,7 +81,7 @@
       </div>
       <ul>
         <li  v-for="(link, index) in links" :key="index">
-          <a :class="{ active: link.current }" :href="link.url">
+          <a :class="{ active: link.Current }" :href="link.url">
             {{ link.text }}
           </a>
         </li>
@@ -108,12 +108,12 @@ header {
         & a {
           color: black;
           text-decoration: none;
-          padding-bottom: 15px;
+          padding-bottom: 45px;
         }
         & :hover,
         &.active {
           color: blue;
-          border-bottom: 2px solid blue;
+          border-bottom: 3px solid blue;
         }
       }
     }
