@@ -9,52 +9,52 @@
             {
               "text": " CHARACTERS",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "COMICS",
               "url":"#",
-              "Current" :" true"
+              "current" :" true"
             },
             {
               "text": "MOVIES",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "TV",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "GAMES",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "COLLECTIBLES",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "VIDEOS",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "FANS",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "NEWS",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             {
               "text": "SHOP",
               "url":"#",
-              "Current" :" false"
+              "current" :" false"
             },
             
           ]
@@ -77,11 +77,11 @@
  
     <nav>
       <div id="img-container">
-        <img src="../assets/img/dc-logo.png" alt="Logo DC">
+        <img src="img/dc-logo.png" alt="Logo DC">
       </div>
       <ul>
         <li  v-for="(link, index) in links" :key="index">
-          <a :class="{ active: link.Current }" :href="link.url">
+          <a :class="{ active: link.current }" :href="link.url">
             {{ link.text }}
           </a>
         </li>
